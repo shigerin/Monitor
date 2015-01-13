@@ -2,21 +2,29 @@ import java.io.IOException;
 import java.net.Inet4Address;
 import java.net.InetAddress;
 
-
+//メインクラス
+/**
+ * @author koike
+ *メインクラス
+ */
 public class Main {
 
-	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
 
+	/**
+	 * メイン関数
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		//指定サブネット以下のIPアドレスの使用有無をチェックする
 		CheckHosts("192.9.211");
+
 
 	}
 
 	/**
-	 * @param subnet
-	 */
-	/**
-	 * @param subnet
+	 * 指定されたサブネットのホストの有無をチェックする
+	 * @param subnet 調べるサブネットマスク
 	 */
 	public static void CheckHosts(String subnet)
 	{
